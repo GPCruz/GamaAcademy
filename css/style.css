@@ -2,6 +2,7 @@
 
 html{
     scroll-behavior: smooth;
+    background-color: #000;
 }
 
 body{
@@ -34,10 +35,17 @@ i{
 }
 
 footer{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: large;
     height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.h1-title{
+    color: #fff;
 }
 
 .container{
@@ -194,9 +202,6 @@ footer{
     transition: 1s;
 }
 
-
-
-
 .text-center{
     text-align: center;
 }
@@ -238,8 +243,9 @@ img{
 }
 
 .youtube-video{
-    width: 80vw;
-    min-height: 60vh;
+    width: 90vw;
+    padding: 0 5vw;
+    min-height: 80vh;
 }
 .youtube-video-wrapper{
     height: fit-content;
