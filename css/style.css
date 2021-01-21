@@ -54,7 +54,7 @@ footer{
 }
 
 .container-paralax{
-    height: 100vh;
+    /*height: 100vh;*/
     display: flex;
     background-attachment: fixed;
     background-position: center;
@@ -93,10 +93,6 @@ footer{
 
 .content-flex--reverse{
     flex-direction: row-reverse;
-}
-
-.bg-img--version--1{
-    background-image: url('https://2.bp.blogspot.com/-uqt4eSIuskI/V-Vn7pvujHI/AAAAAAAAEVw/GUB9SAzEb94zkBBkuIct4BD4zW__3csAQCLcB/s1600/Beautiful%2BMountain%2B%2Babstratos%252C%2Banimes%252C%2Bazul%252C%2Bback%252C%2Bbackground%252C%2Bblue%252C%2Bcliparte%252C%2Bcliparts%252C%2Bdesenhos%252C%2Bfestas%252C%2Bfontes%252C%2Bfundo%2Babstrato%252C%2Bfundo%2Bazul%2Bvetores%252C%2Bfundos%252C%2Bimagem%252C%2Bimagens%252C%2Bpaisage%252C%2Bpaisagem%252C%2Bpa%2B%252826%2529.jpg');
 }
 
 .bg-img--version--1{
