@@ -1,7 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -31,55 +31,26 @@
                             <div class="card">
                                 <div class="card-body"> 
                                     <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Seu Nome</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Seu Nome">
+                                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                        <input type="name" class="form-control" id="name" placeholder="Seu Nome">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="exampleFormControlTextarea1" class="form-label">Sua idade</label>
-                                        <input type="number" class="form-control" id="age" placeholder="Sua idade">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlTextarea1" class="form-label">Telefone</label>
-                                        <input type="tel" class="form-control" id="phone" placeholder="Telefone">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlTextarea1" class="form-label">Profissão</label>
-                                        <input type="text" class="form-control" id="job" placeholder="Profissão">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlTextarea1" class="form-label">Endereço</label>
-                                        <input type="text" class="form-control" id="address" placeholder="Endereço">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlTextarea1" class="form-label">Estado</label>
-                                        <input type="text" class="form-control" id="state" placeholder="Estado">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                        <input type="text" class="form-control" id="age" placeholder="Sua idade">
                                     </div>
                                     <button type="submit" onclick="SecondScreen()" class="btn btn-primary">Enviar</button>
                                 </div>
                             </div>
                         </div> <div id="root"></div>`;
 
-        
-        function test(){
-            document.getElementById('name').value = "Guilherme";
-            document.getElementById('age').value = 26;
-            document.getElementById('phone').value = "981234567";
-            document.getElementById('job').value = "Programador";
-            document.getElementById('address').value = "Rua Logo Ali";
-            document.getElementById('state').value = "RJ";
-        };
+
         
 
 
                             
         function SecondScreen() {
-            //test();
             let userName = document.getElementById('name').value;
             let ageUser = document.getElementById('age').value;
-            let userPhone   = document.getElementById('phone').value;
-            let userJob     = document.getElementById('job').value;
-            let userAddress = document.getElementById('address').value;
-            let userState   = document.getElementById('state').value;
             let rootDiv = document.querySelector('#root')
 
             let LoadContent = `<div class="d-flex justify-content-center align-items-center full-page">
@@ -93,9 +64,7 @@
             let Content = ` <div class="container">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h1>Seu nome é ${userName} e você tem ${ageUser} anos.</h1>
-                                        <h2>Seu telefone de contato é ${userPhone} e você trabalha como ${userJob}.</h2>
-                                        <h2>Seu endereço é ${userAddress}, que fica em ${userState}</h2>
+                                        <h1> Seu nome é ${userName} e você tem ${ageUser} anos.</h1>
                                         <h2>Seja bem vindo</h2>
                                     </div>
                                 </div>         
