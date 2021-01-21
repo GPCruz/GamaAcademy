@@ -2,6 +2,7 @@
 
 html{
     scroll-behavior: smooth;
+    background-color: #000;
 }
 
 body{
@@ -22,27 +23,47 @@ h4, h5, h6{
 p{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    font-size: x-large;
+    padding: 35px;
+    text-align: justify;
+}
+
+i{
+    font-size: 40px;
+    color: #fff;
+
 }
 
 footer{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: large;
     height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.h1-title{
+    color: #fff;
+}
+
 .container{
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .container-paralax{
-    height: 80vh;
+    /*height: 100vh;*/
     display: flex;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.container-header{
+    text-align: center;
 }
 
 .content-paralax--data{
@@ -52,31 +73,6 @@ footer{
     flex-direction: column;
     justify-content: center;
 
-}
-
-.bg-img--version--1{
-    background-image: url('https://2.bp.blogspot.com/-uqt4eSIuskI/V-Vn7pvujHI/AAAAAAAAEVw/GUB9SAzEb94zkBBkuIct4BD4zW__3csAQCLcB/s1600/Beautiful%2BMountain%2B%2Babstratos%252C%2Banimes%252C%2Bazul%252C%2Bback%252C%2Bbackground%252C%2Bblue%252C%2Bcliparte%252C%2Bcliparts%252C%2Bdesenhos%252C%2Bfestas%252C%2Bfontes%252C%2Bfundo%2Babstrato%252C%2Bfundo%2Bazul%2Bvetores%252C%2Bfundos%252C%2Bimagem%252C%2Bimagens%252C%2Bpaisage%252C%2Bpaisagem%252C%2Bpa%2B%252826%2529.jpg');
-}
-
-.bg-img--version--1{
-    background-image: url('https://i.pinimg.com/originals/9c/4d/76/9c4d76e73724851b8cbc9656ef4aae93.jpg');
-}
-
-.bg-img--version--2{
-    background-image: url('https://i.pinimg.com/originals/b4/fd/a8/b4fda87594b2b3007e0c2b6b46b28e60.jpg');
-}
-
-
-.bg-img--version--3{
-    background-image: url('https://images.unsplash.com/photo-1610482650877-a580984185a0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-}
-
-.bg-img--version--4{
-    background-image: url('https://cdn.pixabay.com/photo/2015/12/08/00/49/mountains-1082061_960_720.jpg');
-}
-
-.container-header{
-    text-align: center;
 }
 
 .content-default{
@@ -99,11 +95,45 @@ footer{
     flex-direction: row-reverse;
 }
 
+.bg-img--version--1{
+    background-image: url('https://i.pinimg.com/originals/9c/4d/76/9c4d76e73724851b8cbc9656ef4aae93.jpg');
+}
+
+.bg-img--version--2{
+    background-image: url('https://i.pinimg.com/originals/b4/fd/a8/b4fda87594b2b3007e0c2b6b46b28e60.jpg');
+}
+
+
+.bg-img--version--3{
+    background-image: url('https://images.unsplash.com/photo-1610482650877-a580984185a0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+}
+
+.bg-img--version--4{
+    background-image: url('https://cdn.pixabay.com/photo/2015/12/08/00/49/mountains-1082061_960_720.jpg');
+}
+
+
 .flex-wrap{
     flex: 1;
     margin: 2px;
     width: 33%;
     justify-content: center;
+}
+
+/* flex-item */
+.flex-item--1{
+    flex: 1;
+    margin: 2px;
+}
+
+.flex-item--2{
+    flex: 2;
+    margin: 2px;
+}
+
+.flex-item--3{
+    flex: 3;
+    margin: 2px;
 }
 
 .content-space--default{
@@ -116,12 +146,21 @@ footer{
     justify-content: center;
 }
 
-.content-justify--bt{
+.content-justify--ar{
     justify-content: space-around;
 }
 
+.content-justify--bt{
+    justify-content: space-between;
+}
+
+
 .content-align{
     align-items: flex-start;
+}
+
+.content-text{
+    padding: 25px;
 }
 
 /* Left main*/
@@ -159,30 +198,6 @@ footer{
     transition: 1s;
 }
 
-i{
-    font-size: 40px;
-    color: #fff;
-
-}
-
-/* flex-item */
-.flex-item--1{
-    flex: 1;
-    margin: 2px;
-}
-
-.flex-item--2{
-    flex: 2;
-    margin: 2px;
-}
-
-.flex-item--3{
-    flex: 3;
-    margin: 2px;
-}
-
-
-
 .text-center{
     text-align: center;
 }
@@ -208,9 +223,12 @@ i{
     color:  #000;
 }
 
+img{
+    max-height: 100%;
+}
+
 .img-card{
-    height: 300px;
-    height: 300px;
+    max-height: 300px;
 }
 
 .img-wrapper{
@@ -221,9 +239,50 @@ i{
 }
 
 .youtube-video{
-    width: 100%;
+    width: 90vw;
+    padding: 0 5vw;
+    min-height: 80vh;
 }
 .youtube-video-wrapper{
     height: fit-content;
-    width: 50vh;
+    min-width: 50vh;
+}
+
+.bg-img-1{
+    background-image: url('https://images.unsplash.com/photo-1610892415063-d89a504ce049?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+    background-position: bottom;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+.bg-img-2{
+    background-image: url('https://images.madeiramadeira.com.br/product/images/21153841-adesivo-parede-paisagem-praia-barcos-mar-sol-natureza-gg170prdae32hnhhnwoxa-179-1-800x729.jpg');
+    background-position: bottom;
+    background-size: cover;
+    min-height: 50vh;
+    min-width: 30vw;
+}
+
+.bg-img-3{
+    background-image: url('https://i.pinimg.com/originals/63/c8/35/63c835c733798f77114e82bfbcda4c00.jpg');
+    background-position: bottom;
+    background-size: cover;
+    min-height: 50vh;
+    min-width: 30vw;
+}
+
+.bg-img-4{
+    background-image: url('https://cdn-images.rtp.pt/icm/noticias/images/f7/f7a993852568a9012fd62858d2329032?w=620&q=90&rect=0,27,950,521');
+    background-position: bottom;
+    background-size: cover;
+    min-height: 50vh;
+    min-width: 30vw;
+}
+
+.bg-img-5{
+    background-image: url('https://images.unsplash.com/photo-1610918335451-2c1f8467a422?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+    min-width: 33vw;
 }
