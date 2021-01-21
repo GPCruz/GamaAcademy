@@ -288,7 +288,7 @@ img{
 
 
 /* Media query */
-@media only screen and (max-width: 480px ) {
+@media only screen and (max-width: 970px ) {
     .content-flex {
         display: grid;
     }
@@ -303,23 +303,14 @@ img{
         margin: 5px 0;
     }
     p{
+        font-size: small;
+    }
+
+}
+
+@media only screen and (min-width: 971px) and (max-width: 1024px) {
+    p{
         font-size: medium;
     }
-
-}
-
-@media only screen and (min-width: 481px ) and (max-width: 768px) {
-    .content-flex {
-        display: grid;
-    }
-    .content-flex--direction {
-        flex-direction: column;
-    }
     
-    p{
-        font-size: x-large;
-    }
-}
-
-@media only screen and (min-width: 769px ), (orientation: landscape){
 }
