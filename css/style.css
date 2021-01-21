@@ -116,7 +116,6 @@ footer{
 .flex-wrap{
     flex: 1;
     margin: 2px;
-    width: 33%;
     justify-content: center;
 }
 
@@ -285,4 +284,42 @@ img{
     background-size: cover;
     min-height: 50vh;
     min-width: 33vw;
+}
+
+
+/* Media query */
+@media only screen and (max-width: 480px ) {
+    .content-flex {
+        display: grid;
+    }
+    
+    .flex-wrap{
+        width: 100%;
+    }
+    .content-flex--direction {
+        flex-direction: column;
+    }
+    p{
+        font-size: medium;
+    }
+
+    
+}
+
+@media only screen and (min-width: 600px ) {
+    .bg-color--blue {
+        background-color: #435740;
+        color: #ffff00
+    }
+
+}
+
+@media only screen and (min-width: 1382px ) {
+        .container{
+            max-width: 60%;
+        }
+        .bg-color--purple {
+            background-color: #FFA500;
+            color: #000
+        }
 }
