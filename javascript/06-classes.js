@@ -22,7 +22,7 @@ function MakeClass(){
     return class{}
 }
 
-/**/
+/** /
 
 
 class Dog{
@@ -40,3 +40,16 @@ const Belinha = new Dog()
 console.log(Belinha)
 
 /**/
+
+nomeDoMetodo(){
+    // codigo
+    return
+}
+
+get nomeDoMetodo( name ){
+    return this.name
+}
+
+set nomeDoMetodo( name ){
+    this.name
+}
