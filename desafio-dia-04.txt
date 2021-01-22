@@ -1,0 +1,7 @@
+Nome
+EMail
+Idade
+telefone
+estado civil
+Cidade
+Estado
